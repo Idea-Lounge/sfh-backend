@@ -76,7 +76,11 @@
     chatMessages: [{
       type: Schema.Types.ObjectId,
       ref: 'ChatMessage'
-    }]
+    }],
+    active: {
+      type: Boolean,
+      required: true
+    }
   });
 
   var Proposal = mongoose.model('Proposal', ProposalSchema);
